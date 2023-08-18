@@ -24,12 +24,24 @@ Example: we:1 stands for the option we -> weight and you can choose it with the 
 
 All short cuts:
 * we -> weight
-* mg -> milligrams
+* le -> lenght
+* mg -> milligram
 * gr -> gram
 * kg -> kilogram
 * to -> tons
 * ou -> ounce
 * po -> pound
+* nm -> nanometer
+* um -> mikrometer
+* mm -> millimeter
+* cm -> centimeter
+* dc -> decimeter
+* km -> kilometer
+* in -> inches
+* fo -> foot
+* ya -> yard
+* mi -> mile
+* sm -> sea mile
 
 # Credits
 no credits

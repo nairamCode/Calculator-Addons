@@ -1,12 +1,14 @@
-class umrechner():
+class converter():
     def run():
         options = [1,2]
-        print('we:1')
+        print('we:1 le:2')
         choosing = int(input('Choose a Option: '))
         while choosing not in options:
             choosing = int(input('Choose a Option: '))
         if choosing == 1:
-            umrechner.weight()
+            converter.weight()
+        if choosing == 2:
+            converter.lenght()
 
     def weight():
         weight_Options = [1,2,3,4,5,6]
@@ -99,4 +101,40 @@ class umrechner():
                 result = number
         print(result)
 
-umrechner.run()
+    def lenght():
+        lenght_Options = [1,2,3,4,5,6,7,8,9,10]
+        number = float(input('Lenght: '))
+        print('nm:1 um:2 mm:3')
+        print('cm:4 dc:5 km:6')
+        print('in:7 fo:8 ya:9')
+        print('mi:9 sm:10')
+        input_lenght = int(input('Input lenght?: '))
+        output_lenght = int(input('Output lenght?: '))
+        while input_lenght not in lenght_Options:
+            input_lenght = int(input('Output lenght?: '))
+        while output_lenght not in lenght_Options:
+            output_lenght = int(input('Input lenght?: '))
+        if input_lenght == 1:
+            if input_lenght == 1:
+                result = number
+            elif input_lenght == 2:
+                result = number
+            elif input_lenght == 3:
+                result = number
+            elif input_lenght == 4:
+                result = number
+            elif input_lenght == 5:
+                result = number
+            elif input_lenght == 6:
+                result = number
+            elif input_lenght == 7:
+                result = number
+            elif input_lenght == 8:
+                result = number
+            elif input_lenght == 9:
+                result = number
+            elif input_lenght == 10:
+                result = number
+        print(result)
+
+converter.run()
