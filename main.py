@@ -1,27 +1,102 @@
-from tkinter import *
-class calculator():
+class umrechner():
     def run():
-        window = Tk()
-        window.title('Calculator')
-        window.configure(width=263, height=399)
-        # Text Field
-        field = Label(state='disabled', width=32, height=7).place(x=0, y=0)
-        # Operations
-        plus_button = Button(text="+", width=8, height=3).place(x=198, y=288)
-        minus_button = Button(text="-", width=8, height=3).place(x=198, y=232)
-        multiplication_button = Button(text="*", width=8, height=3).place(x=198, y=176)
-        division_button = Button(text=":", width=8, height=3).place(x=198, y=120)
-        equals_button = Button(text="=", width=8, height=3).place(x=198, y=344)
-        # Numbers
-        number_one_button = Button(text="1", width=8, height=3).place(x=0, y=288)
-        number_two_button = Button(text="2", width=8, height=3).place(x=66, y=288)
-        number_three_button = Button(text="3", width=8, height=3).place(x=132, y=288)
-        number_four_button = Button(text="4", width=8, height=3).place(x=0, y=232)
-        number_five_button = Button(text="5", width=8, height=3).place(x=66, y=232)
-        number_six_button = Button(text="6", width=8, height=3).place(x=132, y=232)
-        number_seven_button = Button(text="7", width=8, height=3).place(x=0, y=176)
-        number_eight_button = Button(text="8", width=8, height=3).place(x=66, y=176)
-        number_nine_button = Button(text="9", width=8, height=3).place(x=132, y=176)
-        window.mainloop()
+        options = [1,2]
+        print('w:1')
+        choosing = int(input('Choose a Option: '))
+        while choosing not in options:
+            choosing = int(input('Choose a Option: '))
+        if choosing == 1:
+            umrechner.weight()
 
-calculator.run()
+    def weight():
+        weight_Options = [1,2,3,4,5,6]
+        number = float(input('Weight: '))
+        print('m:1 g:2 k:3')
+        print('t:4 u:5 p:6')
+        input_weight = int(input('Input weigth?: '))
+        output_weight = int(input('Output weigth?: '))
+        while input_weight not in weight_Options:
+            input_weight = int(input('Output weigth?: '))
+        while output_weight not in weight_Options:
+            output_weight = int(input('Input weigth?: '))
+        if input_weight == 1:
+            if output_weight == 1:
+                result = number
+            elif output_weight == 2:
+                result = number / 1000
+            elif output_weight == 3:
+                result = number / 1000000
+            elif output_weight == 4:
+                result = number / 1000000000
+            elif output_weight == 5:
+                result = number / 28350
+            elif output_weight == 6:
+                result = number / 453600
+        if input_weight == 2:
+            if output_weight == 1:
+                result = number * 1000
+            elif output_weight == 2:
+                result = number
+            elif output_weight == 3:
+                result = number / 1000
+            elif output_weight == 4:
+                result = number / 1000000
+            elif output_weight == 5:
+                result = number / 28.35
+            elif output_weight == 6:
+                result = number / 453.6
+        if input_weight == 3:
+            if output_weight == 1:
+                result = number * 1000000
+            elif output_weight == 2:
+                result = number * 1000
+            elif output_weight == 3:
+                result = number
+            elif output_weight == 4:
+                result = number / 1000
+            elif output_weight == 5:
+                result = number * 35.274
+            elif output_weight == 6:
+                result = number / 2.205
+        if input_weight == 4:
+            if output_weight == 1:
+                result = number * 1000000000
+            elif output_weight == 2:
+                result = number * 1000000
+            elif output_weight == 3:
+                result = number * 1000
+            elif output_weight == 4:
+                result = number
+            elif output_weight == 5:
+                result = number * 35270
+            elif output_weight == 6:
+                result = number / 2205
+        if input_weight == 5:
+            if output_weight == 1:
+                result = number * 28350
+            elif output_weight == 2:
+                result = number * 28.35
+            elif output_weight == 3:
+                result = number / 35.274
+            elif output_weight == 4:
+                result = number / 35270
+            elif output_weight == 5:
+                result = number
+            elif output_weight == 6:
+                result = number / 16
+        if input_weight == 6:
+            if output_weight == 1:
+                result = number * 453600
+            elif output_weight == 2:
+                result = number * 453.6
+            elif output_weight == 3:
+                result = number / 2.205
+            elif output_weight == 4:
+                result = number / 2205
+            elif output_weight == 5:
+                result = number * 16
+            elif output_weight == 6:
+                result = number
+        print(result)
+
+umrechner.run()
