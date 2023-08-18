@@ -2,7 +2,7 @@
 This is a collection of addons I coded for my school calculator.
 
 # Description
-"Mathematicians are lazy!" -My Math Teacher ... Because of that I thougt I should code this so I don't have to do . It's probably not allowed in major test but yeah. I used the Casio fx-9860G3. More things will be added over time. I don't recommend cheating in exams or any other test with this.
+"Mathematicians are lazy!" -My Math Teacher ... Because of that I thougt I should code this so I don't have to do these things by myself. It's probably not allowed in major test but yeah. I used the Casio fx-9860G3. More things will be added over time. I don't recommend cheating in exams or any other test with this.
 
 # Setup
 1. Connect the calculator with the usb cable to any usb port on your pc
