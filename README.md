@@ -4,6 +4,17 @@ This is a collection of addons I coded for my school calculator.
 # Description
 "Mathematicians are lazy!" -My Math Teacher ... Because of that I thougt I should code this so I don't have to do these things by myself. It's probably not allowed in major test but yeah. I used the Casio fx-9860G3. More things will be added over time. I don't recommend cheating in exams or any other test with this.
 
+# To Do
+* converter:
+    * lenght
+    * volume
+    * time
+    * temperature
+    * speed
+    * area
+    * energy
+    * pressure
+
 # Setup
 1. Connect the calculator with the usb cable to any usb port on your pc
 2. Press the F1 key on your calculator
