@@ -1,7 +1,7 @@
 class umrechner():
     def run():
         options = [1,2]
-        print('w:1')
+        print('we:1')
         choosing = int(input('Choose a Option: '))
         while choosing not in options:
             choosing = int(input('Choose a Option: '))
@@ -11,8 +11,8 @@ class umrechner():
     def weight():
         weight_Options = [1,2,3,4,5,6]
         number = float(input('Weight: '))
-        print('m:1 g:2 k:3')
-        print('t:4 u:5 p:6')
+        print('mg:1 gr:2 kg:3')
+        print('to:4 ou:5 po:6')
         input_weight = int(input('Input weigth?: '))
         output_weight = int(input('Output weigth?: '))
         while input_weight not in weight_Options:
