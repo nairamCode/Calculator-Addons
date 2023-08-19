@@ -1,10 +1,9 @@
 class main_menu():
     def run():
-        user_options = [1,2,3,4]
+        user_options = [1,2,3]
         print('math:1')
-        print('games:2')
-        print('help:3')
-        print('exit:4')
+        print('physics:2')
+        print('exit:3')
         user_input = int(input('Choose one Option: '))
         while user_input not in user_options:
             user_input = int(input('Choose one Option: '))
@@ -13,11 +12,8 @@ class main_menu():
             main_menu.math()
         elif user_input == 2:
             print('\n', end='')
-            main_menu.games()
+            main_menu.physics()
         elif user_input == 3:
-            print('\n', end='')
-            main_menu.help()
-        elif user_input == 4:
             exit()
 
     def math():
@@ -29,12 +25,8 @@ class main_menu():
         if user_input == 1:
             print('\n', end='')
             converter.run()
-    def games():
-        print('No games yet.')
-        print('\n', end='')
-        main_menu.run()
-    def help():
-        print('No help yet.')
+    def physics():
+        print('No physics yet.')
         print('\n', end='')
         main_menu.run()
 
@@ -149,38 +141,142 @@ class converter():
         print(result)
 
     def lenght():
-        lenght_Options = [1,2,3,4,5,6,7,8,9,10]
+        lenght_Options = [1,2,3,4,5,6,7,8,9,10,11,12]
         number = float(input('Lenght: '))
         print('nm:1 um:2 mm:3')
-        print('cm:4 dc:5 km:6')
-        print('in:7 fo:8 ya:9')
-        print('mi:9 sm:10')
+        print('cm:4 dc:5 mt:6')
+        print('km:7 in:8 fo:9')
+        print('ya:10 mi:11 sm:12')
         input_lenght = int(input('Input lenght?: '))
         while input_lenght not in lenght_Options:
             input_lenght = int(input('Output lenght?: '))
         output_lenght = int(input('Output lenght?: '))
         while output_lenght not in lenght_Options:
             output_lenght = int(input('Input lenght?: '))
-        if input_lenght == 1:
-            if input_lenght == 1:
+        if input_lenght == 1: # Nanometer
+            if output_lenght == 1: # Nanometer -> Nanometer
                 result = number
-            elif input_lenght == 2:
+            elif output_lenght == 2: # Nanometer -> Mikrometer
                 result = number
-            elif input_lenght == 3:
+            elif output_lenght == 3: # Nanometer -> Millimeter
                 result = number
-            elif input_lenght == 4:
+            elif output_lenght == 4: # Nanometer -> Centimeter
                 result = number
-            elif input_lenght == 5:
+            elif output_lenght == 5: # Nanometer -> Decimeter
                 result = number
-            elif input_lenght == 6:
+            elif output_lenght == 6: # Nanometer -> Meter
                 result = number
-            elif input_lenght == 7:
+            elif output_lenght == 7: # Nanometer -> Kilometer
                 result = number
-            elif input_lenght == 8:
+            elif output_lenght == 8: # Nanometer -> Inches
                 result = number
-            elif input_lenght == 9:
+            elif output_lenght == 9: # Nanometer -> Foot
                 result = number
-            elif input_lenght == 10:
+            elif output_lenght == 10: # Nanometer -> Yard
+                result = number
+            elif output_lenght == 11: # Nanometer -> Mile
+                result = number
+            elif output_lenght == 12: # Nanometer -> Sea Mile
+                result = number
+        if input_lenght == 2: # Mikrometer
+            if output_lenght == 1: # Mikrometer -> Nanometer
+                result = number
+            elif output_lenght == 2: # Mikrometer -> Mikrometer
+                result = number
+            elif output_lenght == 3: # Mikrometer -> Millimeter
+                result = number
+            elif output_lenght == 4: # Mikrometer -> Centimeter
+                result = number
+            elif output_lenght == 5: # Mikrometer -> Decimeter
+                result = number
+            elif output_lenght == 6: # Mikrometer -> Meter
+                result = number
+            elif output_lenght == 7: # Mikrometer -> Kilometer
+                result = number
+            elif output_lenght == 8: # Mikrometer -> Inches
+                result = number
+            elif output_lenght == 9: # Mikrometer -> Foot
+                result = number
+            elif output_lenght == 10: # Mikrometer -> Yard
+                result = number
+            elif output_lenght == 11: # Mikrometer -> Mile
+                result = number
+            elif output_lenght == 12: # Mikrometer -> Sea Mile
+                result = number
+        if input_lenght == 3: # Millimeter
+            if output_lenght == 1: # Millimeter -> Nanometer
+                result = number
+            elif output_lenght == 2: # Millimeter -> Mikrometer
+                result = number
+            elif output_lenght == 3: # Millimeter -> Millimeter
+                result = number
+            elif output_lenght == 4: # Millimeter -> Centimeter
+                result = number
+            elif output_lenght == 5: # Millimeter -> Decimeter
+                result = number
+            elif output_lenght == 6: # Millimeter -> Meter
+                result = number
+            elif output_lenght == 7: # Millimeter -> Kilometer
+                result = number
+            elif output_lenght == 8: # Millimeter -> Inches
+                result = number
+            elif output_lenght == 9: # Millimeter -> Foot
+                result = number
+            elif output_lenght == 10: # Millimeter -> Yard
+                result = number
+            elif output_lenght == 11: # Millimeter -> Mile
+                result = number
+            elif output_lenght == 12: # Millimeter -> Sea Mile
+                result = number
+        if input_lenght == 4: # Centimeter
+            if output_lenght == 1: # Centimeter -> Nanometer
+                result = number
+            elif output_lenght == 2: # Centimeter -> Mikrometer
+                result = number
+            elif output_lenght == 3: # Centimeter -> Millimeter
+                result = number
+            elif output_lenght == 4: # Centimeter -> Centimeter
+                result = number
+            elif output_lenght == 5: # Centimeter -> Decimeter
+                result = number
+            elif output_lenght == 6: # Centimeter -> Meter
+                result = number
+            elif output_lenght == 7: # Centimeter -> Kilometer
+                result = number
+            elif output_lenght == 8: # Centimeter -> Inches
+                result = number
+            elif output_lenght == 9: # Centimeter -> Foot
+                result = number
+            elif output_lenght == 10: # Centimeter -> Yard
+                result = number
+            elif output_lenght == 11: # Centimeter -> Mile
+                result = number
+            elif output_lenght == 12: # Centimeter -> Sea Mile
+                result = number
+        if input_lenght == 5: # Decimeter
+            if output_lenght == 1: # Decimeter -> Nanometer
+                result = number
+            elif output_lenght == 2: # Decimeter -> Mikrometer
+                result = number
+            elif output_lenght == 3: # Decimeter -> Millimeter
+                result = number
+            elif output_lenght == 4: # Decimeter -> Centimeter
+                result = number
+            elif output_lenght == 5: # Decimeter -> Decimeter
+                result = number
+            elif output_lenght == 6: # Decimeter -> Meter
+                result = number
+            elif output_lenght == 7: # Decimeter -> Kilometer
+                result = number
+            elif output_lenght == 8: # Decimeter -> Inches
+                result = number
+            elif output_lenght == 9: # Decimeter -> Foot
+                result = number
+            elif output_lenght == 10: # Decimeter -> Yard
+                result = number
+            elif output_lenght == 11: # Decimeter -> Mile
+                result = number
+            elif output_lenght == 12: # Decimeter -> Sea Mile
                 result = number
         print('\n', end='')
         print(result)

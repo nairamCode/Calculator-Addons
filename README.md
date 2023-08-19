@@ -30,32 +30,35 @@ With running the main.py you will be asked what you want to do. Everything is ch
 
 [option] : [corresponding number]
 
-Example: we:1 stands for the option we -> weight and you can choose it with the number 1
+Example: we:1 stands for the option we -> weight and you can choose it with the number 1.
 
 All short cuts:
 * we -> weight
+    * mg -> milligram
+    * gr -> gram
+    * kg -> kilogram
+    * to -> tons
+    * ou -> ounce
+    * po -> pound
 * le -> lenght
+    * nm -> nanometer
+    * um -> mikrometer
+    * mm -> millimeter
+    * cm -> centimeter
+    * dc -> decimeter
+    * mt -> meter
+    * km -> kilometer
+    * in -> inches
+    * fo -> foot
+    * ya -> yard
+    * mi -> mile
+    * sm -> sea mile
 * te -> temperature
-* mg -> milligram
-* gr -> gram
-* kg -> kilogram
-* to -> tons
-* ou -> ounce
-* po -> pound
-* nm -> nanometer
-* um -> mikrometer
-* mm -> millimeter
-* cm -> centimeter
-* dc -> decimeter
-* km -> kilometer
-* in -> inches
-* fo -> foot
-* ya -> yard
-* mi -> mile
-* sm -> sea mile
-* ce -> celsius
-* fa -> fahrenheit
-* ke -> kelvin
+    * ce -> celsius
+    * fa -> fahrenheit
+    * ke -> kelvin
+
+
 
 # Credits
 no credits
