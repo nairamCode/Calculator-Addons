@@ -9,7 +9,6 @@ This is a collection of addons I coded for my school calculator.
     * lenght
     * volume
     * time
-    * temperature
     * speed
     * area
     * energy

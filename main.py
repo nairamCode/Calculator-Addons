@@ -1,3 +1,44 @@
+class main_menu():
+    def run():
+        user_options = [1,2,3,4]
+        print('math:1')
+        print('games:2')
+        print('help:3')
+        print('exit:4')
+        user_input = int(input('Choose one Option: '))
+        while user_input not in user_options:
+            user_input = int(input('Choose one Option: '))
+        if user_input == 1:
+            print('\n', end='')
+            main_menu.math()
+        if user_input == 2:
+            print('\n', end='')
+            main_menu.games()
+        if user_input == 3:
+            print('\n', end='')
+            main_menu.help()
+        if user_input == 4:
+            exit()
+
+    def math():
+        user_options = [1]
+        print('converter:1')
+        user_input = int(input('Choose one Option: '))
+        while user_input not in user_options:
+            user_input = int(input('Choose one Option: '))
+        if user_input == 1:
+            print('\n', end='')
+            converter.run()
+    def games():
+        print('No games yet.')
+        print('\n', end='')
+        main_menu.run()
+    def help():
+        print('No help yet.')
+        print('\n', end='')
+        main_menu.run()
+
+# Math
 class converter():
     def run():
         options = [1,2,3]
@@ -6,10 +47,13 @@ class converter():
         while choosing not in options:
             choosing = int(input('Choose a Option: '))
         if choosing == 1:
+            print('\n', end='')
             converter.weight()
         if choosing == 2:
+            print('\n', end='')
             converter.lenght()
         if choosing == 3:
+            print('\n', end='')
             converter.temperature()
 
     def weight():
@@ -101,6 +145,7 @@ class converter():
                 result = number * 16
             elif output_weight == 6:
                 result = number
+        print('\n', end='')
         print(result)
 
     def lenght():
@@ -137,6 +182,7 @@ class converter():
                 result = number
             elif input_lenght == 10:
                 result = number
+        print('\n', end='')
         print(result)
     
     def temperature():
@@ -170,6 +216,7 @@ class converter():
                 result = (number - 273.15) * 5 / 9 + 32
             elif output_temperature == 3:
                 result = number
+        print('\n', end='')
         print(result)
 
-converter.run()
+main_menu.run()
