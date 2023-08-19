@@ -36,6 +36,7 @@ Example: we:1 stands for the option we -> weight and you can choose it with the 
 All short cuts:
 * we -> weight
 * le -> lenght
+* te -> temperature
 * mg -> milligram
 * gr -> gram
 * kg -> kilogram
@@ -53,6 +54,9 @@ All short cuts:
 * ya -> yard
 * mi -> mile
 * sm -> sea mile
+* ce -> celsius
+* fa -> fahrenheit
+* ke -> kelvin
 
 # Credits
 no credits

@@ -1,7 +1,7 @@
 class converter():
     def run():
-        options = [1,2]
-        print('we:1 le:2')
+        options = [1,2,3]
+        print('we:1 le:2 te:3')
         choosing = int(input('Choose a Option: '))
         while choosing not in options:
             choosing = int(input('Choose a Option: '))
@@ -9,6 +9,8 @@ class converter():
             converter.weight()
         if choosing == 2:
             converter.lenght()
+        if choosing == 3:
+            converter.temperature()
 
     def weight():
         weight_Options = [1,2,3,4,5,6]
@@ -134,6 +136,39 @@ class converter():
             elif input_lenght == 9:
                 result = number
             elif input_lenght == 10:
+                result = number
+        print(result)
+    
+    def temperature():
+        temperature_Options = [1,2,3]
+        number = float(input('Temperature: '))
+        print('ce:1 fa:2 ke:3')
+        input_temperature = int(input('Input temperature?: '))
+        output_temperature = int(input('Output temperature?: '))
+        while input_temperature not in temperature_Options:
+            input_temperature = int(input('Output temperature?: '))
+        while output_temperature not in temperature_Options:
+            output_temperature = int(input('Input temperature?: '))
+        if input_temperature == 1:
+            if output_temperature == 1:
+                result = number
+            elif output_temperature == 2:
+                result = number * 9 / 5 + 32
+            elif output_temperature == 3:
+                result = number + 273.15
+        if input_temperature == 2:
+            if output_temperature == 1:
+                result = (number - 32) * 5 / 9
+            elif output_temperature == 2:
+                result = number
+            elif output_temperature == 3:
+                result = (number - 32) * 5 / 9 + 273.15
+        if input_temperature == 3:
+            if output_temperature == 1:
+                result = number - 273.15
+            elif output_temperature == 2:
+                result = (number - 273.15) * 5 / 9 + 32
+            elif output_temperature == 3:
                 result = number
         print(result)
 
