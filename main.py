@@ -11,13 +11,13 @@ class main_menu():
         if user_input == 1:
             print('\n', end='')
             main_menu.math()
-        if user_input == 2:
+        elif user_input == 2:
             print('\n', end='')
             main_menu.games()
-        if user_input == 3:
+        elif user_input == 3:
             print('\n', end='')
             main_menu.help()
-        if user_input == 4:
+        elif user_input == 4:
             exit()
 
     def math():
@@ -49,10 +49,10 @@ class converter():
         if choosing == 1:
             print('\n', end='')
             converter.weight()
-        if choosing == 2:
+        elif choosing == 2:
             print('\n', end='')
             converter.lenght()
-        if choosing == 3:
+        elif choosing == 3:
             print('\n', end='')
             converter.temperature()
 
@@ -62,11 +62,11 @@ class converter():
         print('mg:1 gr:2 kg:3')
         print('to:4 ou:5 po:6')
         input_weight = int(input('Input weigth?: '))
-        output_weight = int(input('Output weigth?: '))
         while input_weight not in weight_Options:
-            input_weight = int(input('Output weigth?: '))
+            input_weight = int(input('Input weigth?: '))
+        output_weight = int(input('Output weigth?: '))
         while output_weight not in weight_Options:
-            output_weight = int(input('Input weigth?: '))
+            output_weight = int(input('Output weigth?: '))
         if input_weight == 1:
             if output_weight == 1:
                 result = number
@@ -80,7 +80,7 @@ class converter():
                 result = number / 28350
             elif output_weight == 6:
                 result = number / 453600
-        if input_weight == 2:
+        elif input_weight == 2:
             if output_weight == 1:
                 result = number * 1000
             elif output_weight == 2:
@@ -93,7 +93,7 @@ class converter():
                 result = number / 28.35
             elif output_weight == 6:
                 result = number / 453.6
-        if input_weight == 3:
+        elif input_weight == 3:
             if output_weight == 1:
                 result = number * 1000000
             elif output_weight == 2:
@@ -106,7 +106,7 @@ class converter():
                 result = number * 35.274
             elif output_weight == 6:
                 result = number / 2.205
-        if input_weight == 4:
+        elif input_weight == 4:
             if output_weight == 1:
                 result = number * 1000000000
             elif output_weight == 2:
@@ -119,7 +119,7 @@ class converter():
                 result = number * 35270
             elif output_weight == 6:
                 result = number / 2205
-        if input_weight == 5:
+        elif input_weight == 5:
             if output_weight == 1:
                 result = number * 28350
             elif output_weight == 2:
@@ -132,7 +132,7 @@ class converter():
                 result = number
             elif output_weight == 6:
                 result = number / 16
-        if input_weight == 6:
+        elif input_weight == 6:
             if output_weight == 1:
                 result = number * 453600
             elif output_weight == 2:
@@ -156,9 +156,9 @@ class converter():
         print('in:7 fo:8 ya:9')
         print('mi:9 sm:10')
         input_lenght = int(input('Input lenght?: '))
-        output_lenght = int(input('Output lenght?: '))
         while input_lenght not in lenght_Options:
             input_lenght = int(input('Output lenght?: '))
+        output_lenght = int(input('Output lenght?: '))
         while output_lenght not in lenght_Options:
             output_lenght = int(input('Input lenght?: '))
         if input_lenght == 1:
@@ -190,9 +190,9 @@ class converter():
         number = float(input('Temperature: '))
         print('ce:1 fa:2 ke:3')
         input_temperature = int(input('Input temperature?: '))
-        output_temperature = int(input('Output temperature?: '))
         while input_temperature not in temperature_Options:
             input_temperature = int(input('Output temperature?: '))
+        output_temperature = int(input('Output temperature?: '))
         while output_temperature not in temperature_Options:
             output_temperature = int(input('Input temperature?: '))
         if input_temperature == 1:
@@ -202,14 +202,14 @@ class converter():
                 result = number * 9 / 5 + 32
             elif output_temperature == 3:
                 result = number + 273.15
-        if input_temperature == 2:
+        elif input_temperature == 2:
             if output_temperature == 1:
                 result = (number - 32) * 5 / 9
             elif output_temperature == 2:
                 result = number
             elif output_temperature == 3:
                 result = (number - 32) * 5 / 9 + 273.15
-        if input_temperature == 3:
+        elif input_temperature == 3:
             if output_temperature == 1:
                 result = number - 273.15
             elif output_temperature == 2:
